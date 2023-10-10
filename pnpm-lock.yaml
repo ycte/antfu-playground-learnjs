@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      acorn:
+        specifier: ^8.10.0
+        version: 8.10.0
+      acron:
+        specifier: ^1.0.5
+        version: 1.0.5
       fast-glob:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1558,7 +1564,13 @@ packages:
     resolution: {integrity: sha512-F0SAmZ8iUtS//m8DmCTA0jlh6TDKkHQyK6xc6V4KDTyZKA9dnvX9/3sRTVQrWm79glUAZbnmmNcdYwUIHWVybw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-    dev: true
+
+  /acron@1.0.5:
+    resolution: {integrity: sha512-Jm3uey9PSUl5k9RsjBSfDJG35nG0vd9B4FUCV1J/NeVHDQ5HJPVpAhmGrPYtPKh0gLhEUIEy4DKqBy/p60B+4Q==}
+    hasBin: true
+    dependencies:
+      lodash: 4.17.21
+    dev: false
 
   /agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -3131,7 +3143,6 @@ packages:
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-update@5.0.1:
     resolution: {integrity: sha512-5UtUDQ/6edw4ofyljDNcOVJQ4c7OjDro4h3y8e1GQL5iYElYclVHJ3zeWchylvMaKnDbDilC8irOVyexnA/Slw==}

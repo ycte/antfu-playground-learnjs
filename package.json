@@ -40,6 +40,8 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "acorn": "^8.10.0",
+    "acron": "^1.0.5",
     "fast-glob": "^3.3.1",
     "magic-string": "^0.30.4"
   },
