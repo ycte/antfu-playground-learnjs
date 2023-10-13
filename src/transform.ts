@@ -4,13 +4,14 @@ import MagicString from 'magic-string'
 import fg from 'fast-glob'
 
 // TODO: acorn
+// import { parse } from 'acorn'
 
 // RE ?: --- 匹配的 <\w+> 在 res 中删除，即 '<a>' 结果为 ''
 const importGlobRE = /\bimport\.meta\.globNext(?:<\w+>)?\((.*)\)/g
 
 export async function transform(code: string, id: string) {
   // const str = `export const list = import.meta.globNext<ModuleType>('./modules/*.ts')`
-  // const 心海写的代码 = parse(str, { ecmaVersion: 'latest' })
+  // const 心海写的代码 = parse(str, { ecmaVersion: 'latest', sourceType: 'script' })
   // console.log(心海写的代码)
   const matchs = Array.from(code.matchAll(importGlobRE))
   if (!matchs.length)

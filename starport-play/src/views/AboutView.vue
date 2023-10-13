@@ -1,0 +1,28 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import { Starport } from 'vue-starport'
+import KokomiState from '@/components/KokomiState.vue'
+const a = ref(true)
+
+</script>
+<template>
+  <div class="心海">
+    <KokomiState :prop="a" />
+    <!-- <Starport port="kokomi" 
+      style="height: 100px; margin-top: 120px; width: 100px"
+    >
+      <KokomiState :prop="a" style="height: 200px;">
+      </KokomiState>
+    </Starport>  -->
+  </div>
+</template>
+
+<style>
+@media (min-width: 1024px) {
+  .心海 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+</style>
