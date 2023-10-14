@@ -1,7 +1,7 @@
 {
   "name": "antfu-vite-plugin-glob",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.8.0",
   "description": "_description_",
   "keywords": [],
@@ -43,7 +43,7 @@
   "dependencies": {
     "@vueuse/core": "^10.5.0",
     "acorn": "^8.10.0",
-    "acron": "^1.0.5",
+    "animate.css": "^4.1.1",
     "fast-glob": "^3.3.1",
     "magic-string": "^0.30.4",
     "vue-starport": "^0.4.0"

@@ -18,11 +18,11 @@ onMounted(() => {
 </script>
 <template>
   <div class="珊瑚宫">
-    <KokomiState ref="kokomiref" :prop="a"/>
-    <!-- <Starport port="kokomi" style="height: 200px; width: 200px">
-      <KokomiState :prop="a" style="height: 100px;" ref="kokomiref">
+    <!-- <KokomiState ref="kokomiref" :prop="a"/> -->
+    <Starport port="kokomi" style="height: 200px; width: 200px;font-size: larger;">
+      <KokomiState :prop="a" ref="kokomiref">
       </KokomiState >  
-    </Starport> -->
+    </Starport>
     
   </div>
 </template>

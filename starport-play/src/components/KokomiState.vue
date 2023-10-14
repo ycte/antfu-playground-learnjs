@@ -9,7 +9,7 @@ defineExpose({ a })
 <template>
   <div class="心海厨">
     <h1>kokomi</h1>
-    <slot></slot>
+    <!-- <slot></slot> -->
   </div>
 </template>
 
