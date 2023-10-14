@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
 import { Starport } from 'vue-starport'
 import KokomiState from '@/components/KokomiState.vue'
 const a = ref(true)
@@ -13,7 +14,8 @@ const a = ref(true)
     >
       <KokomiState :prop="a">
       </KokomiState>
-    </Starport> 
+    </Starport>
+    <RouterLink to="/">Home</RouterLink>
   </div>
 </template>
 
