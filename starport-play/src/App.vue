@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import { StarportCarrier } from 'vue-starport'
 import 'animate.css'
 // import HelloWorld from './components/HelloWorld.vue'
@@ -12,29 +12,18 @@ import 'animate.css'
 </script>
 
 <template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
-
-    <div class="wrapper">
-      <!-- <HelloWorld msg="You did it!" /> -->
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
   <!-- <RouterView /> -->
-  // TODO: go-on starport
+  <!-- // TODO: go-on starport -->
   <StarportCarrier>
-    <RouterView v-slot="{ Component }" class="router-view-container">
-        <transition name="fade-kokomi" >
-          <component
+    <!-- <RouterView v-slot="{ Component }" class="router-view-container ">
+      <transition name="fade-kokomi" >
+      <component
             class="animate__animated animate__fadeIn"
             :is="Component"
           />
-        </transition>
-      </RouterView>
+      </transition>
+    </RouterView> -->
+    <RouterView class="router-view-container animate__animated animate__fadeIn" />
   </StarportCarrier>
 </template>
 

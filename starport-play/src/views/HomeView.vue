@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { isRef, onMounted, ref } from 'vue'
+import { RouterLink } from 'vue-router'
 import { Starport } from 'vue-starport'
 import KokomiState from '@/components/KokomiState.vue'
 const a = ref(true)
@@ -23,7 +24,7 @@ onMounted(() => {
       <KokomiState :prop="a" ref="kokomiref">
       </KokomiState >  
     </Starport>
-    
+    <RouterLink to="/about">About</RouterLink>
   </div>
 </template>
 
