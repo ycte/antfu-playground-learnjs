@@ -1,7 +1,14 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
 import { StarportCarrier } from 'vue-starport'
+import 'animate.css'
 // import HelloWorld from './components/HelloWorld.vue'
+// onMounted(() => {
+//   console.log(window.document)
+// }),
+
+// console.log(window)
 </script>
 
 <template>
@@ -21,8 +28,9 @@ import { StarportCarrier } from 'vue-starport'
   // TODO: go-on starport
   <StarportCarrier>
     <RouterView v-slot="{ Component }" class="router-view-container">
-        <transition name="fade-kokomi">
+        <transition name="fade-kokomi" >
           <component
+            class="animate__animated animate__fadeIn"
             :is="Component"
           />
         </transition>
@@ -43,25 +51,15 @@ import { StarportCarrier } from 'vue-starport'
   width: 520px;
   height: 520px;
 }
-.fade-kokomi-enter-from {
-  opacity: 0;
-}
 
-.fade-kokomi-enter-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-kokomi-enter-to {}
-
-.fade-kokomi-leave-from {}
-
-.fade-kokomi-leave-active {
-  transition: opacity 0.5s ease;
+/* .fade-kokomi-leave-active {
+  transition: opacity 0.3s ease;
 }
 
 .fade-kokomi-leave-to {
   opacity: 0;
-}
+} */
+
 
 header {
   line-height: 1.5;

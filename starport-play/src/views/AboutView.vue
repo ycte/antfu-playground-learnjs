@@ -7,13 +7,13 @@ const a = ref(true)
 </script>
 <template>
   <div class="心海">
-    <KokomiState :prop="a" />
-    <!-- <Starport port="kokomi" 
-      style="height: 100px; margin-top: 120px; width: 100px"
+    <!-- <KokomiState :prop="a" /> -->
+    <Starport port="kokomi" 
+      style="height: 200px; margin-top: 120px; width: 200px; margin-left: 100px;"
     >
-      <KokomiState :prop="a" style="height: 200px;">
+      <KokomiState :prop="a">
       </KokomiState>
-    </Starport>  -->
+    </Starport> 
   </div>
 </template>
 
