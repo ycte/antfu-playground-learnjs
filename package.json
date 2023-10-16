@@ -41,6 +41,7 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "@type-challenges/utils": "^0.1.1",
     "@vueuse/core": "^10.5.0",
     "acorn": "^8.10.0",
     "animate.css": "^4.1.1",
