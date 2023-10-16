@@ -5,7 +5,6 @@ export default antfu(
   {
     ignores: [
       // eslint ignore globs here
-      './my-type-challenge/*.ts',
       'my-type-challenge',
     ],
   },
