@@ -1,5 +1,6 @@
 packages:
   - playground
   - starport-play
+  - play-console
   - type-challenges
   - examples/*
