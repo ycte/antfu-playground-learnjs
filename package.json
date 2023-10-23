@@ -37,6 +37,7 @@
     "test": "vitest",
     "play": "vite playground",
     "playfu:starport": "vite starport-play",
+    "play:console": "vite play-console",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
@@ -64,6 +65,7 @@
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
     "vite": "^4.4.11",
+    "vite-plugin-turbo-console": "^0.1.0",
     "vitest": "^0.34.6"
   },
   "simple-git-hooks": {
