@@ -12,7 +12,7 @@ type cases = [
   Expect<Equal<TupleToObject<typeof tupleMix>, { 1: 1; '2': '2'; 3: 3; '4': '4' }>>,
 ]
 
-// @ts-expect-error
+
 // eslint-disable-next-line unused-imports/no-unused-vars, ts/ban-types
 type error = TupleToObject<[[1, 2], {}]>
 
